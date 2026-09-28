@@ -119,17 +119,38 @@
             <p>Send us an enquiry about your favourite pieces.</p>
         </div>
 
-        <form class="contact-form" id="contactForm">
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Tell us what you are looking for..."
-                rows="5" required></textarea>
-            <button type="submit" class="main-btn">
-                Send Enquiry →
-            </button>
-        </form>
-        <p id="formMessage"></p>
-    </section>
+       
+<form class="contact-form" id="contactForm">
+    <input
+        type="text"
+        id="customerName"
+        name="name"
+        placeholder="Your Name"
+        required
+    >
+
+    <input
+        type="email"
+        id="customerEmail"
+        name="email"
+        placeholder="Your Email"
+        required
+    >
+
+    <textarea
+        id="customerMessage"
+        name="message"
+        placeholder="Tell us what you are looking for..."
+        rows="5"
+        required
+    ></textarea>
+
+    <button type="submit" class="main-btn">
+        Send Enquiry →
+    </button>
+</form>
+
+<p id="formMessage"></p>
 
     <!-- Footer -->
     <footer>
