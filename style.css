@@ -95,7 +95,7 @@ header {
             rgba(20, 15, 11, 0.85),
             rgba(20, 15, 11, 0.25)
         ),
-        url("assets/sofa.jpg") center/cover no-repeat;
+        url("sofa.jpg") center/cover no-repeat;
 }
 
 .hero-content {
