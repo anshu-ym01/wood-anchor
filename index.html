@@ -112,6 +112,67 @@
     </section>
 
     <!-- Contact -->
+     
+<!-- ORDER BOOKING SECTION -->
+<section class="order-section" id="order">
+    <div class="section-heading">
+        <h2>Book Your Furniture</h2>
+        <p>Choose your furniture and place your order.</p>
+    </div>
+
+    <form class="order-form" id="orderForm">
+
+        <input
+            type="text"
+            id="orderName"
+            placeholder="Your Full Name"
+            required
+        >
+
+        <input
+            type="tel"
+            id="orderPhone"
+            placeholder="Your Mobile Number"
+            required
+        >
+
+        <textarea
+            id="orderAddress"
+            placeholder="Full Delivery Address"
+            rows="4"
+            required
+        ></textarea>
+
+        <select id="orderProduct" required>
+            <option value="">Select Furniture</option>
+            <option value="Luxury Sofa">Luxury Sofa</option>
+            <option value="Wooden Bed">Wooden Bed</option>
+            <option value="Custom Furniture">Custom Furniture</option>
+        </select>
+
+        <input
+            type="number"
+            id="orderQuantity"
+            placeholder="Quantity"
+            min="1"
+            value="1"
+            required
+        >
+
+        <textarea
+            id="orderNotes"
+            placeholder="Any special requirements? (Optional)"
+            rows="3"
+        ></textarea>
+
+        <button type="submit" class="main-btn">
+            Place Order on WhatsApp
+        </button>
+
+        <p id="orderMessage"></p>
+
+    </form>
+</section>
     <section class="contact" id="contact">
         <div class="section-heading">
             <p class="small-title">LET'S CONNECT</p>

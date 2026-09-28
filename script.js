@@ -72,3 +72,36 @@ contactForm.addEventListener("submit", async function(event) {
             "Connection error. Please try again.";
     }
 });
+
+const orderForm = document.getElementById("orderForm");
+
+if (orderForm) {
+    orderForm.addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        const name = document.getElementById("orderName").value.trim();
+        const phone = document.getElementById("orderPhone").value.trim();
+        const address = document.getElementById("orderAddress").value.trim();
+        const product = document.getElementById("orderProduct").value;
+        const quantity = document.getElementById("orderQuantity").value;
+        const notes = document.getElementById("orderNotes").value.trim();
+
+        // Apna WhatsApp number yahan daalo
+        const whatsappNumber = "91XXXXXXXXXX";
+
+        const message =
+            `New Furniture Order - Wood Anchor\n\n` +
+            `Name: ${name}\n` +
+            `Phone: ${phone}\n` +
+            `Address: ${address}\n` +
+            `Furniture: ${product}\n` +
+            `Quantity: ${quantity}\n` +
+            `Requirements: ${notes || "None"}`;
+
+        const whatsappURL =
+            `https://wa.me/${whatsappNumber}?text=` +
+            encodeURIComponent(message);
+
+        window.open(whatsappURL, "_blank");
+    });
+}

@@ -371,3 +371,52 @@ footer p {
 .whatsapp-btn:hover {
     background: #128C7E;
 }
+
+/* ORDER BOOKING SECTION */
+
+.order-section {
+    padding: 80px 8%;
+    background: #f5f0e8;
+}
+
+.order-form {
+    max-width: 600px;
+    margin: 30px auto 0;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+.order-form input,
+.order-form textarea,
+.order-form select {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: inherit;
+    box-sizing: border-box;
+}
+
+.order-form input:focus,
+.order-form textarea:focus,
+.order-form select:focus {
+    outline: 2px solid #8b5e3c;
+    border-color: #8b5e3c;
+}
+
+.order-form button {
+    width: 100%;
+    cursor: pointer;
+}
+
+#orderMessage {
+    text-align: center;
+    color: #276738;
+    font-weight: bold;
+}
